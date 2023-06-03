@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-color: black;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: flex-start;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header,
+main,
+footer {
+  border: 2px dashed green;
+}
+
+/*
+.card {
+  width: 25vw;
+  height: 24vh;
+}*/
+
+img {
+  object-fit: cover;
+  width: 250px;
+  height: 150px;
+}
+
+header div {
+  background-color: #4a4a4a;
+  padding: 3px;
+  border-radius: 4px;
+  margin-left: 3px;
+}
+
+.boxicon {
+  display: flex;
+
+}
+
+.boxicon .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.icon span {
+  padding-top: 15px;
+}
+
+.expand {
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+}
+
+footer>div {
+  /* SELEZIONA SOLO FIGLI (NON DISCENDENTI) */
+  display: flex;
+}
+
+#share-screen > i {
+  color:  #4bc800;
+}
+
+.end-meeting {
+  display: flex;
+  background-color: #4a4a4a;
+  color: red;
+  height: 100%;
+}
+
+.end-meeting > span {
+  margin: auto;
+}
