@@ -5,7 +5,6 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +21,6 @@ header {
 }
 
 main {
-
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -54,7 +52,6 @@ footer {
 img {
   object-fit: cover;
   width: 12vw;
-  height: 14vh;
 }
 
 header div {
@@ -89,6 +86,7 @@ header div {
 
 footer > div {  /* SELEZIONA SOLO FIGLI (NON DISCENDENTI) */
   display: flex;
+  flex-wrap: wrap;
 }
 
 div > i {
