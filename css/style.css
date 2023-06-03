@@ -5,6 +5,7 @@
 }
 
 body {
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,12 +22,12 @@ header {
 }
 
 main {
-  padding: 4vh 8vh;
+
   display: flex;
   flex-flow: column wrap;
-  align-content: flex-start;
+  align-content: center;
+  justify-content: center;
   overflow: hidden;
-  flex-grow: 1;
 }
 
 footer {
@@ -39,21 +40,21 @@ footer {
 
 .card{
   position: relative;
-  margin: 5px;   /* SPAZIO TRA LE CARDS*/
+  margin: 4px 2px;   /* SPAZIO TRA LE CARDS*/
 }
 
 .boxuser {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 3px;
   background-color: rgba(150, 150, 150, 0.918);
   padding: 5px
 }
 
 img {
   object-fit: cover;
-  width: 250px;
-  height: 140px;
+  width: 12vw;
+  height: 14vh;
 }
 
 header div {
@@ -86,8 +87,7 @@ header div {
   padding: 0 5px;
 }
 
-footer > div {
-  /* SELEZIONA SOLO FIGLI (NON DISCENDENTI) */
+footer > div {  /* SELEZIONA SOLO FIGLI (NON DISCENDENTI) */
   display: flex;
 }
 
@@ -103,7 +103,6 @@ div > i {
   display: flex;
   background-color: #4a4a4a;
   color: red;
-  height: 100%;
 }
 
 .end-meeting > span {
