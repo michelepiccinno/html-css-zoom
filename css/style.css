@@ -10,6 +10,8 @@ body {
   flex-direction: column;
   color: white;
   background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .8rem;
 }
 
 header {
@@ -19,6 +21,7 @@ header {
 }
 
 main {
+  padding: 4vh 8vh;
   display: flex;
   flex-flow: column wrap;
   align-content: flex-start;
@@ -31,24 +34,26 @@ footer {
   left: 0;
   display: flex;
   justify-content: space-between;
+  background-color: #222222;
 }
 
-header,
-main,
-footer {
-  border: 2px dashed green;
+.card{
+  position: relative;
+  margin: 5px;   /* SPAZIO TRA LE CARDS*/
 }
 
-/*
-.card {
-  width: 25vw;
-  height: 24vh;
-}*/
+.boxuser {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(150, 150, 150, 0.918);
+  padding: 5px
+}
 
 img {
   object-fit: cover;
   width: 250px;
-  height: 150px;
+  height: 140px;
 }
 
 header div {
@@ -81,9 +86,13 @@ header div {
   padding: 0 5px;
 }
 
-footer>div {
+footer > div {
   /* SELEZIONA SOLO FIGLI (NON DISCENDENTI) */
   display: flex;
+}
+
+div > i {
+  font-weight: bolder;
 }
 
 #share-screen > i {
@@ -98,5 +107,5 @@ footer>div {
 }
 
 .end-meeting > span {
-  margin: auto;
+  margin: auto 15px;
 }
